@@ -1,0 +1,271 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPt02geNUgHgoQxz3IapI9J",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/manjumallela8977-bit/Task-1/blob/main/Untitled6.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tqalZRsgpIn-",
+        "outputId": "f66f17b0-aef8-495f-9e72-f40abe509170"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a character: g\n",
+            "Consonant\n"
+          ]
+        }
+      ],
+      "source": [
+        "ch = input(\"Enter a character: \").lower()\n",
+        "if len(ch) == 1 and ch.isalpha():\n",
+        "    if ch in \"aeiou\":\n",
+        "        print(\"Vowel\")\n",
+        "    else:\n",
+        "        print(\"Consonant\")\n",
+        "else:\n",
+        "    print(\"Invalid input! Please enter a single alphabet character.\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "year = int(input(\"Enter a year: \"))\n",
+        "if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):\n",
+        "    print(year, \"is a Leap Year\")\n",
+        "else:\n",
+        "    print(year, \"is Not a Leap Year\")\n",
+        ""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-ZCdCaahpO2n",
+        "outputId": "6ef573fb-3b48-456a-b240-78098fabb40f"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a year: 2005\n",
+            "2005 is Not a Leap Year\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = float(input(\"Enter first number: \"))\n",
+        "b = float(input(\"Enter second number: \"))\n",
+        "c = float(input(\"Enter third number: \"))\n",
+        "print(\"The largest number is:\", max(a, b, c))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sYCHpjRzpT9s",
+        "outputId": "cd8b4e4f-2e57-4221-d0af-8f4730ac254d"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter first number: 4\n",
+            "Enter second number: 6\n",
+            "Enter third number: 7\n",
+            "The largest number is: 7.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = int(input(\"Enter a number: \"))\n",
+        "if num % 5 == 0 and num % 11 == 0:\n",
+        "    print(\"The number is divisible by both 5 and 11\")\n",
+        "else:\n",
+        "    print(\"The number is not divisible by both 5 and 11\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rBo5ExhMpWWy",
+        "outputId": "14d54168-7ca1-4680-d492-d9887bc75958"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number: 6\n",
+            "The number is not divisible by both 5 and 11\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n = int(input(\"Enter a number: \"))\n",
+        "print(\"Sum is:\", n * (n + 1) // 2)\n",
+        ""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4yZzA_blpZzB",
+        "outputId": "d9dbde87-430f-42f4-e3e0-dd937ab68b5d"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number: 9\n",
+            "Sum is: 45\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = int(input(\"Enter a number: \"))\n",
+        "i = 1\n",
+        "while i <= 10:\n",
+        "    print(num, \"x\", i, \"=\", num * i)\n",
+        "    i += 1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VyCsFcN1pc_Z",
+        "outputId": "b2671758-f457-41ac-d7d8-05ca96aef1b7"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number: 8\n",
+            "8 x 1 = 8\n",
+            "8 x 2 = 16\n",
+            "8 x 3 = 24\n",
+            "8 x 4 = 32\n",
+            "8 x 5 = 40\n",
+            "8 x 6 = 48\n",
+            "8 x 7 = 56\n",
+            "8 x 8 = 64\n",
+            "8 x 9 = 72\n",
+            "8 x 10 = 80\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "rows = 4\n",
+        "for i in range(1, rows + 1):\n",
+        "    print(\" \" * (rows - i) + \"*\" * (2 * i - 1))\n",
+        ""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Fd25x6ESpfX9",
+        "outputId": "1f9cea64-cb66-40c0-9263-7e7a4eb5b803"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "   *\n",
+            "  ***\n",
+            " *****\n",
+            "*******\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "rows = 5\n",
+        "for i in range(1, rows + 1):\n",
+        "    for j in range(1, i + 1):\n",
+        "        print(j, end=\"\")\n",
+        "    print()\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LPe-8Br2phbU",
+        "outputId": "95c8f794-dee7-4db0-c4df-b0555f245c20"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "12\n",
+            "123\n",
+            "1234\n",
+            "12345\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
