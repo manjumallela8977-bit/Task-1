@@ -1,0 +1,189 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPgM02nhIT4WnOIMe9ZBR9Y",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/manjumallela8977-bit/Task-1/blob/main/TASK%202\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LtQpFeOkFAnX",
+        "outputId": "83f97188-5b92-4854-ad93-322a6b6c5638"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "78.53975\n"
+          ]
+        }
+      ],
+      "source": [
+        "def area(r):\n",
+        "    return 3.14159 * r * r\n",
+        "\n",
+        "print(area(5))\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def largest(a,b,c):\n",
+        "    l=a\n",
+        "    if b>l:\n",
+        "        l=b\n",
+        "    if c>l:\n",
+        "        l=c\n",
+        "    return l\n",
+        "\n",
+        "print(largest(35,65,55))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1JcGDtRDFvrA",
+        "outputId": "d57ab1f0-0720-46c5-d47e-fe8e93e5a1df"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "65\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def str_len(str):\n",
+        "    count=0\n",
+        "    for i in str:\n",
+        "        count+=1\n",
+        "    return count\n",
+        "\n",
+        "print(str_len(\"THIS IS MANJU\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GPysgdS7GEsS",
+        "outputId": "46b64d3d-a3a8-4dc4-8139-7ebcec5b7d3b"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "13\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def prime(n):\n",
+        "    if n<=1:\n",
+        "        print(\"Not a prime number\")\n",
+        "        return\n",
+        "    for i in range(2,n//2+1):\n",
+        "        if n%i==0:\n",
+        "            print(\"Not a prime number\")\n",
+        "            return\n",
+        "    print(\"Prime number\")\n",
+        "\n",
+        "\n",
+        "\n",
+        "prime(19)\n",
+        "prime(25)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SFJJpPljGaPi",
+        "outputId": "a124f723-ff27-4b25-ada5-fc2fc6c80947"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Prime number\n",
+            "Not a prime number\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def fib(n):\n",
+        "    if n<=0:\n",
+        "        return \"invalid\"\n",
+        "    elif n==1:\n",
+        "        return 0\n",
+        "    elif n==2:\n",
+        "        return 1\n",
+        "    else:\n",
+        "        return fib(n-1)+fib(n-2)\n",
+        "\n",
+        "fib(30)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "K-cUtrRqGrC1",
+        "outputId": "9c6d29bd-840a-440e-f814-0fb83bf4c075"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "514229"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 5
+        }
+      ]
+    }
+  ]
+}
